@@ -14,6 +14,11 @@
         </el-card>
       </el-col>
     </el-row>
+    <el-card class="mt10">
+      <div class="header">
+        <h3>垂直居中</h3>
+      </div>
+    </el-card>
   </div>
 </template>
 <script>
@@ -135,6 +140,19 @@ export default {
   #test3,
   #test4 {
     height: 300px;
+  }
+  .mt10{
+    margin-top: 10px;
+  }
+  .header{
+    h3{
+      margin: 0;
+      padding: 0;
+    }
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    color: #ccc;
   }
 }
 </style>
