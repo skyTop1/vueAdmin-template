@@ -8,6 +8,12 @@ export default {
   name: 'ext',
   data() {
     return {}
+  },
+  modules: {
+    setext() {
+      const o = {}
+      console.log(o)
+    }
   }
 }
 </script>
