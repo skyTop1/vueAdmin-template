@@ -6,11 +6,13 @@
 <script>
 export default {
   name: 'ext',
-  data() {}
+  data() {
+    return {}
+  }
 }
 </script>
 <style lang="scss" scoped>
-.ext{
+.ext {
   height: 100%;
   background-color: #ccc;
 }
