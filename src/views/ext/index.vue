@@ -14,6 +14,9 @@ export default {
       const o = {}
       console.log(o)
     }
+  },
+  methods() {
+    this.setext()
   }
 }
 </script>
