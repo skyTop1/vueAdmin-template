@@ -1,0 +1,99 @@
+{
+  /* 编辑器:开始 */
+  // 控制字体系列。
+  "editor.fontFamily": "Monaco",
+  // 控制编辑器在键入一行后是否自动格式化该行。
+  "editor.formatOnType": true,
+  // 以像素为单位控制字符间距。
+  "editor.letterSpacing": 0.618,
+  // 控制是否显示小地图。
+  "editor.minimap.enabled": false,
+  // 控制是否在键入时自动显示建议。
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  // 一个制表符等于的空格数。
+  // 在 `editor.detectIndentation` 启用时，根据文件内容，该设置可能会被覆盖。
+  "editor.tabSize": 2,
+  // 控制折行的方式。
+  //  - off: 永不换行。
+  //  - on: 将在视区宽度处换行。
+  //  - wordWrapColumn: 在 `editor.wordWrapColumn` 处折行。
+  //  - bounded: 在视区宽度和 `editor.wordWrapColumn` 中的较小值处折行。
+  "editor.wordWrap": "on",
+  /* 编辑器:结束 */
+
+  /* 工作台:开始 */
+  // 指定在工作台中使用的图标主题，或指定 "null" 以不显示任何文件图标。
+  //  - null: 无文件图标
+  //  - vs-minimal
+  //  - vs-seti
+  //  - material-icon-theme
+  "workbench.iconTheme": "material-icon-theme",
+  /* 工作台:结束 */
+
+  /* 文件:开始 */
+  // 控制已更新文件的自动保存。可在[此处](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save)阅读有关自动保存的详细信息。
+  //  - off: 永不自动保存更新后的文件。
+  //  - afterDelay: 当文件修改后的时间超过 `files.autoSaveDelay` 中配置的值时自动进行保存。
+  //  - onFocusChange: 编辑器失去焦点时自动保存更新后的文件。
+  //  - onWindowChange: 窗口失去焦点时自动保存更新后的文件。
+  "files.autoSave": "afterDelay",
+  /* 文件:结束 */
+
+  /* 集成终端:开始 */
+  // 控制终端的字体系列，默认为 `editor.fontFamily` 的值。
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+  /* 集成终端:结束 */
+
+  /* 导航路径:开始 */
+  // 启用/禁用导航路径
+  "breadcrumbs.enabled": true,
+  /* 导航路径:结束 */
+
+  /* Git:开始 */
+  // 是否启用 Git。
+  "git.enabled": true,
+  // 是否启用自动刷新。（由于Git不停的刷新导致卡顿时可以禁用自动刷新,无卡顿略过这里）
+  "git.autorefresh": false,
+  /* Git:结束 */
+
+  /* ESLint:开始 */
+  // Turns auto fix on save on or off.
+  "eslint.autoFixOnSave": true,
+  // The eslint options object to provide args normally passed to eslint when executed from a command line (see http://eslint.org/docs/developer-guide/nodejs-api#cliengine).
+  "eslint.options": {
+    "rules": {
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+    }
+  },
+  // An array of language ids which should be validated by ESLint
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  /* ESLint:结束 */
+
+  /* prettier:开始 */
+  // Whether to add a semicolon at the end of every line
+  "prettier.semi": true,
+  // If true, will use single instead of double quotes
+  "prettier.singleQuote": true,
+  /* prettier:结束 */
+
+  /* vetur:开始 */
+  // Default formatter for <template> region
+  //  - none: disable formatting
+  //  - js-beautify-html: html formatter of js-beautify
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  /* vetur:结束 */
+
+}
