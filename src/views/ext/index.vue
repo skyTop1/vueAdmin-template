@@ -2,11 +2,15 @@
   <div class="ext">
     <el-row :gutter="10">
       <el-col :span="12">
-        <el-input type="text" v-model="age" @focus="setext"/>
+        <el-input type="text"
+                  v-model="age"
+                  @focus="setext" />
       </el-col>
       <el-col :span="12">
-        <el-input type="text" v-model="age" @blur="setext"/>
-        </el-col>
+        <el-input type="text"
+                  v-model="age"
+                  @blur="setext" />
+      </el-col>
     </el-row>
   </div>
 </template>
@@ -23,6 +27,15 @@ export default {
       const o = {}
       console.log(o)
       console.log(this.age)
+    },
+    func() {
+      console.log(typeof arguments === 'object')
+      console.log(arguments[0])
+      console.log(arguments[1])
+      console.log(this)
+    },
+    enterSearchMember() {
+      console.log('点击了enter')
     }
   },
   mounted() {
@@ -31,6 +44,14 @@ export default {
   },
   created() {
     console.log('created')
+    this.func(1, NaN)
+    var that = this
+    document.onkeydown = function(e) {
+      var key = window.event.keyCode
+      if (key === 13) {
+        that.enterSearchMember()
+      }
+    }
   }
 }
 </script>
