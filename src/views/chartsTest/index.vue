@@ -49,6 +49,7 @@ export default {
         yAxis: {},
         series: [{
           name: '销量',
+          barWidth: '30%',
           type: 'bar',
           data: [5, 20, 36, 10, 10, 20]
         }]
@@ -58,7 +59,7 @@ export default {
           {
             name: '访问来源',
             type: 'pie',
-            radius: '55%',
+            radius: ['50%', '70%'],
             data: [
               { value: 235, name: '视频广告' },
               { value: 274, name: '联盟广告' },
@@ -141,11 +142,11 @@ export default {
   #test4 {
     height: 300px;
   }
-  .mt10{
+  .mt10 {
     margin-top: 10px;
   }
-  .header{
-    h3{
+  .header {
+    h3 {
       margin: 0;
       padding: 0;
     }
