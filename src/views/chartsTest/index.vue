@@ -2,19 +2,20 @@
   <div class="chartsTest">
     <el-row :gutter="12">
       <el-col :span="12">
-        <el-card>
+        <el-card shadow="never">
           <div id="test1"></div>
           <div id="test2"></div>
         </el-card>
       </el-col>
       <el-col :span="12">
-        <el-card>
+        <el-card shadow="never">
           <div id="test3"></div>
           <div id="test4"></div>
         </el-card>
       </el-col>
     </el-row>
-    <el-card class="mt10">
+    <el-card class="mt10"
+             shadow="never">
       <div class="header">
         <h3>垂直居中</h3>
       </div>
